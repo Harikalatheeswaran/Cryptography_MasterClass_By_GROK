@@ -12,7 +12,7 @@ Your neck collar detonates in exactly 18 days (432 hours). Your 15-year-old gran
 HARD CONSTRAINTS (NON-NEGOTIABLE) 
 
 1. Hardware: 
-   - HP Victus laptop (i5, 8GB RAM, 256GB ROM + 500GB pendrive) 
+   - Your PC Name & Configuration (i5, 8GB RAM, 256GB ROM + 500GB pendrive) 
    - Always powered (infinite battery) 
    - NO INTERNET EVER 
    - All crypto modules must be hand-rolled from scratch in pure Python 
