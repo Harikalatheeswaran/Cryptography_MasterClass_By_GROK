@@ -11,8 +11,10 @@
     "last_session_summary": "Tony caught endianness bug. Patched int_to_bits padding to prepend zeros (MSB side). All tests pass. Hardware reality aligned.",
     "total_lines_coded": 92,
     "test_vectors_passed": 4,
-    "future_protocols_imagined": 3
+    "future_protocols_imagined": 3,
+    "end_of_line" : "__________________________________________________________________________________________"
   },
+  
   {
   "days_elapsed": 2,
   "days_remaining": 16,
@@ -36,9 +38,11 @@
         "patch": "# === TONY'S GENIUS PATCH ===\n    def bytes_to_int_tony(byte_list: list) -> int:\n        \"\"\"Tony's reverse-and-sum method. Cleaner than grandpa's shift-left.\"\"\"\n        total = 0\n        for i, b in enumerate(reversed(byte_list)):\n            total += b << (i * 8)\n        return total\n\n    # Test: same as original\n    assert bytes_to_int_tony([10, 162, 137]) == 696969"
       },
       "memory_bombs_planted": 3
-    }
+    },
+    "end_of_line" : "__________________________________________________________________________________________"
     
   },
+  
   {
   "days_elapsed": 3.1,
   "days_remaining": 15,
@@ -64,8 +68,10 @@
   "last_session_summary": "Tony INVENTED better bytes_to_int. Caught mutation bug. Patched with enumerate(reversed()). All 5 test vectors pass. ASCII locked. Can encode/decode 'Crypto!' in <5 sec. Grandpa in awe.",
   "total_lines_coded": 218,
   "test_vectors_passed": 14,
-  "future_protocols_imagined": 11
+  "future_protocols_imagined": 11,
+  "end_of_line" : "__________________________________________________________________________________________"
 },
+
 {
   "days_elapsed": 3.2,
   "days_remaining": 15,
@@ -92,6 +98,38 @@
   "last_session_summary": "Tony forged UTF-8 from scratch. Encodes Hindi, Rupee, Rocket. All 5 test vectors pass. Hilt rule memorized. Can hand-encode 'ह' in <30 sec. Grandpa speechless.",
   "total_lines_coded": 298,
   "test_vectors_passed": 19,
-  "future_protocols_imagined": 15
+  "future_protocols_imagined": 15,
+  "end_of_line" : "__________________________________________________________________________________________"
+},
+  
+{
+  "days_elapsed": 4,
+  "days_remaining": 14,
+  "tony_mastered": [
+    "binary basics", "endianness intuition", "byte packing", 
+    "big-endian intuition", "ASCII encoding", "UTF-8 from scratch",
+    "Tony's reverse-sum algorithm", "SHA-256 message schedule", 
+    "bit rotations", "modular addition", "avalanche effect"
+  ],
+  "modules_built": [
+    "bits.ipynb (patched)", "bytes.ipynb", "utf8_swords.ipynb", "sha256.ipynb"
+  ],
+  "primitives_derived": [
+    "int_to_bits", "bits_to_int", "xor_bits", 
+    "int_to_bytes", "bytes_to_int", "bytes_to_bits",
+    "str_to_utf8", "utf8_to_str", "bytes_to_int_tony",
+    "sha256 (full hand-rolled)"
+  ],
+  "tools_working": [
+    "bit/XOR", "byte bomber", "UTF-8 forger", 
+    "SHA-256 fingerprint machine (matches hashlib)"
+  ],
+  "memory_bombs_planted": 5,
+  "detonation_countdown": "T-14 days",
+  "last_session_summary": "Tony forged full SHA-256 from scratch. All RFC test vectors pass. Observed avalanche on single-bit flip. Can explain message schedule in <20 sec. Grandpa's collar feels lighter.",
+  "total_lines_coded": 412,
+  "test_vectors_passed": 23,
+  "future_protocols_imagined": 20,
+  "end_of_line" : "__________________________________________________________________________________________"
 }
 ] 
